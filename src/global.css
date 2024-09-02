@@ -1,0 +1,24 @@
+:root {
+    --white: #ffffff;
+
+    --yellow-700: #cc9600;
+
+    --orange-600: #ff7700;
+
+    --brown-700: #4b330b;
+
+    --gray: #a59f9f;
+
+    font-family: "Bona Nova", serif;
+    font-weight: 400;
+    font-size: 1rem;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
