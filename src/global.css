@@ -7,6 +7,8 @@
 
     --brown-700: #4b330b;
 
+    --blue-200: #64aef4;
+
     --gray: #a59f9f;
 
     font-family: "Bona Nova", serif;
@@ -21,4 +23,8 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
+}
+
+button {
+    background-color: transparent;
 }

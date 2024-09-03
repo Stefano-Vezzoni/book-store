@@ -1,12 +1,14 @@
 import { Header } from "../../components/header/Header";
-import { Hero } from "../../components/hero/Hero";
+import { Hero } from "./hero/Hero";
 import "./Home.module.css";
+import { OurBestPicks } from "./OurBestPicks/OurBestPicks";
 
 export function Home() {
     return (
         <div>
             <Header />
             <Hero />
+            <OurBestPicks />
         </div>
     );
 }
