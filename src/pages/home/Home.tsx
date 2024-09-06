@@ -1,7 +1,8 @@
 import { Header } from "../../components/header/Header";
+import { FavoriteReads } from "./favoriteReads/FavoriteReads";
 import { Hero } from "./hero/Hero";
 import "./Home.module.css";
-import { OurBestPicks } from "./OurBestPicks/OurBestPicks";
+import { OurBestPicks } from "./ourBestPicks/OurBestPicks";
 
 export function Home() {
     return (
@@ -9,6 +10,7 @@ export function Home() {
             <Header />
             <Hero />
             <OurBestPicks />
+            <FavoriteReads />
         </div>
     );
 }
