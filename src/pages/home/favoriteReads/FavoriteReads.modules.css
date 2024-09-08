@@ -9,30 +9,31 @@
     margin-top: 160px;
     padding-top: 160px;
     padding: 160px 90px 0px;
+    margin-bottom: -1px;
 }
 
 .favoriteReadsContainer > div {
     align-self: flex-start;
 }
 
-.contentContainer {
+.favoriteContentContainer {
     display: flex;
     flex-direction: column;
 
     color: var(--white);
 }
 
-.contentContainer > p:nth-of-type(1),
-.contentContainer > p:nth-of-type(2) {
+.favoriteContentContainer > p:nth-of-type(1),
+.favoriteContentContainer > p:nth-of-type(2) {
     font-size: 40px;
     font-weight: 700;
 }
 
-.contentContainer > p:nth-of-type(2) {
+.favoriteContentContainer > p:nth-of-type(2) {
     color: var(--yellow-700);
 }
 
-.contentContainer > p:nth-of-type(3) {
+.favoriteContentContainer > p:nth-of-type(3) {
     font-size: 20px;
     margin-top: 20px;
 }

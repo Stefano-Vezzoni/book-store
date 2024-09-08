@@ -8,7 +8,7 @@ export function FavoriteReads() {
                 <img src={bookStand} />
             </div>
 
-            <div className="contentContainer">
+            <div className="favoriteContentContainer">
                 <p>Your favourite Reads</p>
                 <p className="HighlightedText">Are Here!</p>
                 <p>

@@ -1,0 +1,47 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--black);
+
+    padding: 0px 60px;
+}
+
+.footerContainer > hr {
+    border: none;
+
+    background-color: var(--white);
+
+    height: 1px;
+}
+
+.footerContentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 28px 40px 38px 22px;
+}
+
+.footerContentContainer > div > p {
+    font-size: 12px;
+    color: var(--white);
+}
+
+.highlightedText {
+    font-size: 14px;
+    color: var(--yellow-800);
+}
+
+.alignIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.socialMediaIcons {
+    display: flex;
+    gap: 10px;
+    color: var(--gray-800);
+}
