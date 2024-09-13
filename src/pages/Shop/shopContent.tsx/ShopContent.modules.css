@@ -1,0 +1,53 @@
+.shopContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--yellow-700);
+
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.shopContentContainer > h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.filterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--black);
+
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.shopContainerCustomFilter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    border: 1px solid var(--black);
+    border-radius: 12px;
+
+    font-size: 24px;
+    padding: 8px 24px;
+}
+
+.shopContainerCustomFilter > img {
+    width: 28px;
+    height: 28px;
+}
+
+.bookListContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 40px;
+    margin-top: 80px;
+}
