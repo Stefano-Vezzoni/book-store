@@ -17,7 +17,7 @@ export function BookCard() {
                 <p>Available across all branches</p>
             </div>
 
-            <AddToCartButton />
+            <AddToCartButton buttonName="Add to Cart" />
         </div>
     );
 }

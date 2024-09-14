@@ -2,7 +2,8 @@
     --white: #ffffff;
     --black: #000000;
 
-    --yellow-100: #ffffcc;
+    --yellow-100: hsl(60, 100%, 90%);
+    --yellow-200: #fcf3cf;
     --yellow-700: #cc9600;
     --yellow-800: #ca891d;
 
@@ -13,6 +14,7 @@
     --blue-200: #64aef4;
 
     --gray: #a59f9f;
+    --gray-300: #bbbbbb;
     --gray-800: #1e1e1e;
 
     font-family: "Bona Nova", serif;
