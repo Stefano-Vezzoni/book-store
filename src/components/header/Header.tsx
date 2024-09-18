@@ -1,6 +1,7 @@
 import "./Header.modules.css";
-import { Icon } from "@iconify/react/dist/iconify.js";
 import headerLogo from "../../assets/header-logo.svg";
+import { ShoppingCartIcon } from "../../assets/icons/shoppingCartIcon";
+import { FavoriteBookIcon } from "../../assets/icons/favoriteBookIcon";
 
 export function Header() {
     return (
@@ -16,31 +17,23 @@ export function Header() {
                 </span>
             </div>
 
-            <nav className="navBar">
-                <ul>
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
+            <div className="headerMidNavBar">
+                <a href="/">Home</a>
 
-                    <li>
-                        <a href="/shop">Shop</a>
-                    </li>
+                <a href="/shop">Shop</a>
 
-                    <li>
-                        <a href="/delivery-team">Delivery Team</a>
-                    </li>
+                <a href="/about">About</a>
+            </div>
 
-                    <li>
-                        <a href="/sellers">Sellers</a>
-                    </li>
+            <div className="headerEndNavBar">
+                <a href="/favorites">
+                    <FavoriteBookIcon fill="white" width="28" height="28" />
+                </a>
 
-                    <li className="navBarFavorites">
-                        <a href="/favorites">
-                            <Icon className="navBarIcon" icon="mdi:book-favorite-outline" />
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                <a href="/shoppingcart">
+                    <ShoppingCartIcon fill="white" width="32" height="32" />
+                </a>
+            </div>
         </div>
     );
 }

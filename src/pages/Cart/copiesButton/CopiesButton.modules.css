@@ -1,0 +1,40 @@
+.CopiesButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.CopiesButtonContainer > p {
+    color: var(--brown-700);
+
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+
+.CounterContainer {
+    display: flex;
+    gap: 4px;
+
+    border: 1px solid var(--black);
+    border-radius: 8px;
+
+    padding: 6px;
+}
+
+.CounterContainer > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CounterContainer > button > svg {
+    width: 14px;
+    height: 14px;
+}
+
+.CounterContainer > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}

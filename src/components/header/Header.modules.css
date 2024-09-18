@@ -1,5 +1,6 @@
 .headerContainer {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
     font-size: 1.25rem;
@@ -11,6 +12,18 @@
 
     background-image: url("../../assets/header-background.svg");
     background-size: cover;
+}
+
+.headerContainer a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.headerMidNavBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
 }
 
 .headerLogo {
@@ -35,21 +48,29 @@
     gap: 45px;
 }
 
-.navBar a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.navBar ul {
-    list-style-type: none;
-}
-
 .navBarFavorites {
-    margin-left: 40px;
+    margin-left: 80px;
 }
 
 .navBarIcon {
     width: 2rem;
     height: 4rem;
-    color: var(--yellow-700);
+}
+
+.shoppingCartContainer > a > span {
+    width: 24px;
+    height: 24px;
+}
+
+.headerEndNavBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.headerEndNavBar > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
