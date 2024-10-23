@@ -94,4 +94,8 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE.md) pa
 
 ➜ npm i react-router-dom
 
+➜ npm install json-server
+
+➜ npm install concurrently --save-dev
+
 ```

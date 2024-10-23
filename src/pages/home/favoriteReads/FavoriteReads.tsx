@@ -1,7 +1,13 @@
 import "./FavoriteReads.modules.css";
 import bookStand from "../../../assets/book-stand.svg";
+import { useNavigate } from "react-router-dom";
 
 export function FavoriteReads() {
+    const navigate = useNavigate();
+
+    function goToShop() {
+        navigate("/shop");
+    }
     return (
         <div className="favoriteReadsContainer">
             <div>
@@ -35,7 +41,9 @@ export function FavoriteReads() {
                 </div>
 
                 <div>
-                    <button className="exploreButton">Explore More</button>
+                    <button className="exploreButton" onClick={goToShop}>
+                        Explore More
+                    </button>
                 </div>
             </div>
         </div>

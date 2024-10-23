@@ -5,6 +5,14 @@ import linkedinIcon from "../../assets/icons/linkedin-icon.svg";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 export function Footer() {
+    function goToFacebook() {
+        window.open("https://www.facebook.com", "_blank");
+    }
+
+    function goToInstagram() {
+        window.open("https://www.instagram.com", "_blank");
+    }
+
     return (
         <div className="footerContainer">
             <div>
@@ -27,8 +35,13 @@ export function Footer() {
                 </p>
 
                 <div className="socialMediaIcons">
-                    <img src={facebookIcon} />
-                    <img src={linkedinIcon} />
+                    <button onClick={goToFacebook}>
+                        <img src={facebookIcon} />
+                    </button>
+
+                    <button onClick={goToInstagram}>
+                        <img src={linkedinIcon} />
+                    </button>
                 </div>
             </div>
         </div>

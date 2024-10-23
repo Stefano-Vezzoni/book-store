@@ -49,5 +49,5 @@
     grid-template-columns: repeat(4, 1fr);
 
     gap: 40px;
-    margin-top: 80px;
+    margin: 80px 100px 0px;
 }

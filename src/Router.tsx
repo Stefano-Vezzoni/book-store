@@ -5,12 +5,15 @@ import { BookPage } from "./pages/bookPage/BookPage";
 import { Cart } from "./pages/Cart/Cart";
 
 export function Router() {
+    //Fazer a página de favoritos, identica ao de shoppingcart sem o botão
+    //Fazer a página about us que esqueceu
+    //Fazer a página about us que esqueceu
     return (
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/bookpage" element={<BookPage />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/shoppingcart" element={<Cart />} />
         </Routes>
     );
 }
