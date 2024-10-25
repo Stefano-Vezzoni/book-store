@@ -2,8 +2,10 @@
     --white: #ffffff;
     --black: #000000;
 
-    --yellow-100: hsl(60, 100%, 90%);
+    --yellow-100: #ffffcc;
     --yellow-200: #fcf3cf;
+    --yellow-300: #fcee59;
+    --yellow-400: #d6ce80;
     --yellow-700: #cc9600;
     --yellow-800: #ca891d;
 
