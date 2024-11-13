@@ -8,6 +8,7 @@ export function FavoriteReads() {
     function goToShop() {
         navigate("/shop");
     }
+
     return (
         <div className="favoriteReadsContainer">
             <div>

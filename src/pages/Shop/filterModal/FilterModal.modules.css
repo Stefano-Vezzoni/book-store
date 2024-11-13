@@ -1,0 +1,70 @@
+.filterModalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.filterModalContent {
+    background: white;
+    border-radius: 8px;
+    position: relative;
+
+    padding: 64px 56px 64px;
+}
+
+.filterModalContent > p {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--gray-800);
+
+    margin-bottom: 40px;
+}
+
+.filterModalCloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.filterModalCloseButton > img {
+    width: 50px;
+    height: 50px;
+}
+
+.difficultyContainer {
+    margin-bottom: 40px;
+}
+
+.difficultyContainer > div {
+    display: grid;
+    padding: 0px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.difficultyContainer > p {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gray-600);
+
+    margin-bottom: 8px;
+}
+
+.categoriesContainer > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.categoriesContainer > p {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gray-600);
+
+    margin-bottom: 8px;
+}

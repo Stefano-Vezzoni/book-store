@@ -5,6 +5,8 @@ export interface IBook {
     synopsis: string;
     price: number;
     image: string;
+    categories: string[];
+    difficulty: string;
 }
 
 export async function fetchBooks(): Promise<IBook[]> {

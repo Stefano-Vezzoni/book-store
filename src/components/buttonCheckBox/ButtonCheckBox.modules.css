@@ -3,13 +3,16 @@
     align-items: center;
 
     cursor: pointer;
+    color: var(--gray-700);
 
-    font-size: 24px;
-    padding: 10px 15px;
+    font-size: 18px;
+    padding: 10px 0px;
     border-radius: 4px;
     margin-right: 10px;
 }
 
 .buttonCheckBox {
+    width: 18px;
+    height: 18px;
     margin-right: 8px;
 }

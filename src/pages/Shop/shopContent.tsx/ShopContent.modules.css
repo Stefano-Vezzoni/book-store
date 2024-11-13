@@ -35,13 +35,13 @@
     border: 1px solid var(--black);
     border-radius: 12px;
 
-    font-size: 24px;
+    font-size: 18px;
     padding: 8px 24px;
 }
 
 .shopContainerCustomFilter > img {
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
 }
 
 .bookListContainer {
@@ -50,4 +50,44 @@
 
     gap: 40px;
     margin: 80px 100px 0px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    margin-top: 40px;
+
+    padding: 12px;
+}
+
+.pagination > span {
+    text-align: center;
+    color: var(--gray-800);
+
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagination > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    font-size: 18px;
+}
+
+.pagination > button:disabled,
+.pagination > button > img {
+    color: #a1a1a1;
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+.pagination > button > img {
+    width: 16px;
+    height: 16px;
 }

@@ -6,9 +6,6 @@ import { Cart } from "./pages/Cart/Cart";
 import { AboutUs } from "./pages/aboutUs/AboutUs";
 
 export function Router() {
-    //Fazer a página de favoritos, identica ao de shoppingcart sem o botão
-    //Fazer a página about us que esqueceu
-    //Fazer a página about us que esqueceu
     return (
         <Routes>
             <Route path="/" element={<Home />} />
