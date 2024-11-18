@@ -1,14 +1,19 @@
 import "./BookCard.modules.css";
 import { AddToCartButton } from "../../../components/addToCartButton/AddToCartButton";
+import { useCart } from "../../../hooks/UseCart";
+import { formatToBRL } from "../../../util/currencyFormatter";
 
-interface IBookCard {
+export interface IBookCard {
+    id: number;
     title: string;
     author: string;
     price: number;
     image: string;
 }
 
-export function BookCard({ title, author, price, image }: IBookCard) {
+export function BookCard({ id, title, author, price, image }: IBookCard) {
+    const { addToCart } = useCart();
+
     return (
         <div className="bookCardContainer">
             <img src={image} />
@@ -19,11 +24,14 @@ export function BookCard({ title, author, price, image }: IBookCard) {
             </div>
 
             <div className="bookCardPriceContainer">
-                <p>R$ {price},00</p>
+                <p>{formatToBRL(price)}</p>
                 <p>Available across all branches</p>
             </div>
 
-            <AddToCartButton buttonName="Add to Cart" />
+            <AddToCartButton
+                buttonName="Add to Cart"
+                onClick={() => addToCart({ id, title, author, price, image })}
+            />
         </div>
     );
 }

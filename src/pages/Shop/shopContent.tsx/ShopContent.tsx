@@ -104,6 +104,7 @@ export function ShopContent() {
             <div className="bookListContainer">
                 {paginatedBooks?.map((book) => (
                     <BookCard
+                        id={book.id}
                         key={book.id}
                         title={book.title}
                         author={book.author}

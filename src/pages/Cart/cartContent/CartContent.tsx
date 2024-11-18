@@ -1,8 +1,16 @@
 import "./CartContent.modules.css";
-import { CartItem } from "../cartItem/CartItem";
 import { EmptyCartContent } from "../emptyCartContent/EmptyCartContent";
+import { useCart } from "../../../hooks/UseCart";
+import { CartItem } from "../cartItem/CartItem";
+
+//Refazer a porra do cartcontext inteiro usando a tipagem correta dessa vez.
+//Refazer a porra do cartcontext inteiro usando a tipagem correta dessa vez.
+//Refazer a porra do cartcontext inteiro usando a tipagem correta dessa vez.
+//Refazer a porra do cartcontext inteiro usando a tipagem correta dessa vez.
 
 export function CartContent() {
+    const { cart } = useCart();
+
     const isCartEmpty = false;
 
     return (
@@ -13,7 +21,16 @@ export function CartContent() {
                 <EmptyCartContent />
             ) : (
                 <div className="cartItemsContainer">
-                    <CartItem />
+                    {cart.map((book) => (
+                        <CartItem
+                            key={book.id}
+                            id={book.id}
+                            title={book.title}
+                            author={book.author}
+                            price={book.price}
+                            image={book.image}
+                        />
+                    ))}
                 </div>
             )}
 
