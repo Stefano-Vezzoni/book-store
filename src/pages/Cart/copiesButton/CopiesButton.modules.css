@@ -7,8 +7,6 @@
 }
 
 .CopiesButtonContainer > p {
-    color: var(--brown-700);
-
     font-size: 18px;
     padding-bottom: 4px;
 }

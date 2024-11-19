@@ -3,8 +3,12 @@ import bookExample from "../../../assets/bookExample.svg";
 import { CopiesButton } from "../copiesButton/CopiesButton";
 import { IBookCard } from "../../Shop/bookCard/BookCard";
 import { formatToBRL } from "../../../util/currencyFormatter";
+import { useCart } from "../../../hooks/UseCart";
+import xIcon from "../../../assets/icons/x-icon.svg";
 
 export function CartItem({ id, title, author, price }: IBookCard) {
+    const { removeFromCart } = useCart();
+
     return (
         <div className="cartItemContainer">
             <img src={bookExample} />
@@ -22,7 +26,9 @@ export function CartItem({ id, title, author, price }: IBookCard) {
                 <CopiesButton bookId={id} />
             </div>
 
-            <button>Remove</button>
+            <button className="removeButton" onClick={() => removeFromCart(id)}>
+                <img src={xIcon} />
+            </button>
         </div>
     );
 }

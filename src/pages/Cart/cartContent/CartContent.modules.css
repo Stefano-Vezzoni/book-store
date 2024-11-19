@@ -6,8 +6,7 @@
 
     color: var(--yellow-800);
 
-    margin-top: 64px;
-    margin-bottom: 68px;
+    margin: 64px 120px 68px;
 }
 
 .CartContentContainer > h1 {
@@ -15,12 +14,10 @@
 }
 
 .cartItemsContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
 
-    gap: 40px;
+    gap: 60px;
 }
 
 .checkoutContainer {

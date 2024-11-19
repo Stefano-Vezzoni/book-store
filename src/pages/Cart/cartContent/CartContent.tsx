@@ -2,16 +2,19 @@ import "./CartContent.modules.css";
 import { EmptyCartContent } from "../emptyCartContent/EmptyCartContent";
 import { useCart } from "../../../hooks/UseCart";
 import { CartItem } from "../cartItem/CartItem";
+import { formatToBRL } from "../../../util/currencyFormatter";
 
-//Refazer a porra do cartcontext inteiro usando a tipagem correta dessa vez.
-//Refazer a porra do cartcontext inteiro usando a tipagem correta dessa vez.
-//Refazer a porra do cartcontext inteiro usando a tipagem correta dessa vez.
-//Refazer a porra do cartcontext inteiro usando a tipagem correta dessa vez.
+//Arrumar a estilização que está toda cagada
+//Ajustar o preço para ser o valor real
 
 export function CartContent() {
     const { cart } = useCart();
 
     const isCartEmpty = false;
+
+    function getTotalPrice() {
+        return cart.reduce((total, book) => total + book.price * (book.quantity || 1), 0);
+    }
 
     return (
         <div className="CartContentContainer">
@@ -35,7 +38,7 @@ export function CartContent() {
             )}
 
             <div className="checkoutContainer">
-                <p>Total Price: R$700,00</p>
+                <p>Total Price: {formatToBRL(getTotalPrice())}</p>
                 <button>Proceed to Checkout</button>
             </div>
         </div>
