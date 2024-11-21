@@ -4,9 +4,6 @@ import { useCart } from "../../../hooks/UseCart";
 import { CartItem } from "../cartItem/CartItem";
 import { formatToBRL } from "../../../util/currencyFormatter";
 
-//Arrumar a estilização que está toda cagada
-//Ajustar o preço para ser o valor real
-
 export function CartContent() {
     const { cart } = useCart();
 

@@ -11,7 +11,7 @@ export function Router() {
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/about" element={<AboutUs />} />
-            <Route path="/bookpage" element={<BookPage />} />
+            <Route path="/bookpage/:id" element={<BookPage />} />
             <Route path="/shoppingcart" element={<Cart />} />
         </Routes>
     );
