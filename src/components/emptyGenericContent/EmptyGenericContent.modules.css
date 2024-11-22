@@ -1,4 +1,4 @@
-.emptyCartContainer {
+.emptyGenericContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,22 +9,21 @@
     color: var(--black);
 }
 
-.emptyCartContainer > img {
-    margin-top: 40px;
-    margin-bottom: 20px;
+.emptyGenericContainer > img {
+    margin-bottom: 12px;
 }
 
-.emptyCartContainer > div {
+.emptyGenericContainer > div {
     text-align: center;
 }
 
-.emptyCartContainer > div > h2 {
+.emptyGenericContainer > div > h2 {
     font-size: 28px;
     font-weight: 400;
     margin-top: 6px;
 }
 
-.emptyCartContainer > div > p {
+.emptyGenericContainer > div > p {
     max-width: 360px;
 
     font-size: 16px;

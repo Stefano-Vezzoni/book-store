@@ -1,13 +1,11 @@
 import "./CartContent.modules.css";
-import { EmptyCartContent } from "../emptyCartContent/EmptyCartContent";
 import { useCart } from "../../../hooks/UseCart";
 import { CartItem } from "../cartItem/CartItem";
 import { formatToBRL } from "../../../util/currencyFormatter";
+import { EmptyGenericContent } from "../../../components/emptyGenericContent/EmptyGenericContent";
 
 export function CartContent() {
     const { cart } = useCart();
-
-    const isCartEmpty = false;
 
     function getTotalPrice() {
         return cart.reduce((total, book) => total + book.price * (book.quantity || 1), 0);
@@ -17,27 +15,29 @@ export function CartContent() {
         <div className="CartContentContainer">
             <h1>Your Cart Details</h1>
 
-            {isCartEmpty ? (
-                <EmptyCartContent />
+            {cart.length === 0 ? (
+                <EmptyGenericContent name="cart" />
             ) : (
-                <div className="cartItemsContainer">
-                    {cart.map((book) => (
-                        <CartItem
-                            key={book.id}
-                            id={book.id}
-                            title={book.title}
-                            author={book.author}
-                            price={book.price}
-                            image={book.image}
-                        />
-                    ))}
-                </div>
-            )}
+                <>
+                    <div className="cartItemsContainer">
+                        {cart.map((book) => (
+                            <CartItem
+                                key={book.id}
+                                id={book.id}
+                                title={book.title}
+                                author={book.author}
+                                price={book.price}
+                                image={book.image}
+                            />
+                        ))}
+                    </div>
 
-            <div className="checkoutContainer">
-                <p>Total Price: {formatToBRL(getTotalPrice())}</p>
-                <button>Proceed to Checkout</button>
-            </div>
+                    <div className="checkoutContainer">
+                        <p>Total Price: {formatToBRL(getTotalPrice())}</p>
+                        <button>Proceed to Checkout</button>
+                    </div>
+                </>
+            )}
         </div>
     );
 }

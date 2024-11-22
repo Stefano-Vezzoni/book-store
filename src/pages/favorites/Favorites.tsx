@@ -1,12 +1,12 @@
 import { Footer } from "../../components/footer/Footer";
 import { Header } from "../../components/header/Header";
-import { ShopContent } from "./shopContent.tsx/ShopContent";
+import { FavoritesContent } from "./favoritesContent/FavoritesContent";
 
-export function Shop() {
+export function Favorites() {
     return (
         <>
             <Header />
-            <ShopContent />
+            <FavoritesContent />
             <Footer />
         </>
     );

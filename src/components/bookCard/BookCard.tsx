@@ -1,7 +1,7 @@
 import "./BookCard.modules.css";
-import { AddToCartButton } from "../../../components/addToCartButton/AddToCartButton";
-import { useCart } from "../../../hooks/UseCart";
-import { formatToBRL } from "../../../util/currencyFormatter";
+import { AddToCartButton } from "../addToCartButton/AddToCartButton";
+import { useCart } from "../../hooks/UseCart";
+import { formatToBRL } from "../../util/currencyFormatter";
 import { useNavigate } from "react-router-dom";
 
 export interface IBookCard {

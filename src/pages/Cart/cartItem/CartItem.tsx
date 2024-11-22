@@ -1,7 +1,7 @@
 import "./CartItem.modules.css";
 import bookExample from "../../../assets/bookExample.svg";
 import { CopiesButton } from "../copiesButton/CopiesButton";
-import { IBookCard } from "../../Shop/bookCard/BookCard";
+import { IBookCard } from "../../../components/bookCard/BookCard";
 import { formatToBRL } from "../../../util/currencyFormatter";
 import { useCart } from "../../../hooks/UseCart";
 import xIcon from "../../../assets/icons/x-icon.svg";

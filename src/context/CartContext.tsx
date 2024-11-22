@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { IBookCard } from "../pages/Shop/bookCard/BookCard";
+import { IBookCard } from "../components/bookCard/BookCard";
 
 interface CartItem extends IBookCard {
     quantity: number;

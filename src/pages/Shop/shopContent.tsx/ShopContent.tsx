@@ -1,5 +1,5 @@
 import { ButtonCheckbox } from "../../../components/buttonCheckBox/ButtonCheckBox";
-import { BookCard } from "../bookCard/BookCard";
+import { BookCard } from "../../../components/bookCard/BookCard";
 import filterIcon from "../../../assets/icons/filter-icon.svg";
 import nextPageIcon from "../../../assets/icons/next-page-icon.svg";
 import previousPageIcon from "../../../assets/icons/previous-page-icon.svg";
