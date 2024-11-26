@@ -3,7 +3,7 @@ import bookExample from "../../../assets/bookExample.svg";
 import { CopiesButton } from "../copiesButton/CopiesButton";
 import { IBookCard } from "../../../components/bookCard/BookCard";
 import { formatToBRL } from "../../../util/currencyFormatter";
-import { useCart } from "../../../hooks/UseCart";
+import { useCart } from "../../../hooks/useCart";
 import xIcon from "../../../assets/icons/x-icon.svg";
 
 export function CartItem({ id, title, author, price }: IBookCard) {

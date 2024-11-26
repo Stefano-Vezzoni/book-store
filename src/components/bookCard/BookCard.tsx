@@ -1,6 +1,6 @@
 import "./BookCard.modules.css";
 import { AddToCartButton } from "../addToCartButton/AddToCartButton";
-import { useCart } from "../../hooks/UseCart";
+import { useCart } from "../../hooks/useCart";
 import { formatToBRL } from "../../util/currencyFormatter";
 import { useNavigate } from "react-router-dom";
 

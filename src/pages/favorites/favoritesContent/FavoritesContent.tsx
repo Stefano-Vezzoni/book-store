@@ -1,31 +1,25 @@
 import "./FavoritesContent.modules.css";
 import { EmptyGenericContent } from "../../../components/emptyGenericContent/EmptyGenericContent";
-import { BookCard } from "../../../components/bookCard/BookCard";
+import { useFavBooks } from "../../../hooks/useFavBooks";
+import { FavoriteItem } from "../favoriteItem/FavoriteItem";
 
-//Fazer o conteudo do favorites funcionar, criar o array ,pensar aonde vai ficar etc
-//Fazer o conteudo do favorites funcionar, criar o array ,pensar aonde vai ficar etc
-//Fazer o conteudo do favorites funcionar, criar o array ,pensar aonde vai ficar etc
 export function FavoritesContent() {
-    const isEmpty = true;
+    const { favBooks } = useFavBooks();
 
     return (
-        <div className="CartContentContainer">
+        <div className="FavoritesContentContainer">
             <h1>Your Favorites Details</h1>
-            {isEmpty ? (
-                <EmptyGenericContent name="cart" />
+
+            {favBooks.length === 0 ? (
+                <EmptyGenericContent name="favorite" />
             ) : (
                 <>
-                    <div className="cartItemsContainer">
-                        {/* {array.map((book) => (
-                            <BookCard
-                                key={book.id}
-                                id={book.id}
-                                title={book.title}
-                                author={book.author}
-                                price={book.price}
-                                image={book.image}
-                            />
-                        ))} */}
+                    <div className="favoriteItemsContainer">
+                        {favBooks.map((book) => (
+                            <div key={book.id}>
+                                <FavoriteItem book={book} />
+                            </div>
+                        ))}
                     </div>
                 </>
             )}

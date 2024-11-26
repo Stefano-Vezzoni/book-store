@@ -1,0 +1,21 @@
+.FavoritesContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--yellow-800);
+
+    margin: 64px 120px 68px;
+}
+
+.FavoritesContentContainer > h1 {
+    margin-bottom: 90px;
+}
+
+.favoriteItemsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+
+    gap: 60px;
+}

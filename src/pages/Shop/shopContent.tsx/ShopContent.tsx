@@ -7,6 +7,7 @@ import "./ShopContent.modules.css";
 import { useState } from "react";
 import { FilterModal } from "../filterModal/FilterModal";
 import { useBooks, useFilteredBooks, usePaginatedBooks } from "../../../hooks/useBooks";
+import { ToggleFavBookButton } from "../../../components/toggleFavBookButton/ToggleFavBookButton";
 
 export function ShopContent() {
     const { data } = useBooks();
@@ -85,14 +86,18 @@ export function ShopContent() {
 
             <div className="bookListContainer">
                 {paginatedBooks?.map((book) => (
-                    <BookCard
-                        id={book.id}
-                        key={book.id}
-                        title={book.title}
-                        author={book.author}
-                        price={book.price}
-                        image={book.image}
-                    />
+                    <div className="bookPlusToggleFav" key={book.id}>
+                        <BookCard
+                            id={book.id}
+                            key={book.id}
+                            title={book.title}
+                            author={book.author}
+                            price={book.price}
+                            image={book.image}
+                        />
+
+                        <ToggleFavBookButton book={book} />
+                    </div>
                 ))}
             </div>
 

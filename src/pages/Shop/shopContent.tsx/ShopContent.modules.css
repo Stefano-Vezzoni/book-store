@@ -52,6 +52,10 @@
     margin: 80px 100px 0px;
 }
 
+.bookPlusToggleFav {
+    position: relative;
+}
+
 .pagination {
     display: flex;
     align-items: center;

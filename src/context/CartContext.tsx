@@ -1,19 +1,19 @@
 import { createContext, useEffect, useState } from "react";
 import { IBookCard } from "../components/bookCard/BookCard";
 
-interface CartItem extends IBookCard {
+interface ICartItem extends IBookCard {
     quantity: number;
 }
 
 interface CartContextProps {
-    cart: CartItem[];
+    cart: ICartItem[];
     addToCart: (book: IBookCard) => void;
     increaseQuantity: (bookId: number) => void;
     decreaseQuantity: (bookId: number) => void;
     removeFromCart: (bookId: number) => void;
 }
 
-function getInitialCart(): CartItem[] {
+function getInitialCart(): ICartItem[] {
     const storedCart = localStorage.getItem("cart");
     return storedCart ? JSON.parse(storedCart) : [];
 }
@@ -21,7 +21,7 @@ function getInitialCart(): CartItem[] {
 export const CartContext = createContext<CartContextProps | undefined>(undefined);
 
 export function CartProvider({ children }: { children: React.ReactNode }) {
-    const [cart, setCart] = useState<CartItem[]>(getInitialCart);
+    const [cart, setCart] = useState<ICartItem[]>(getInitialCart);
 
     useEffect(() => {
         localStorage.setItem("cart", JSON.stringify(cart));

@@ -1,6 +1,6 @@
 import "./CopiesButton.modules.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { useCart } from "../../../hooks/UseCart";
+import { useCart } from "../../../hooks/useCart";
 
 interface ICopiesButton {
     bookId: number;

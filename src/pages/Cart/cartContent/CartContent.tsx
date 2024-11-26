@@ -1,5 +1,5 @@
 import "./CartContent.modules.css";
-import { useCart } from "../../../hooks/UseCart";
+import { useCart } from "../../../hooks/useCart";
 import { CartItem } from "../cartItem/CartItem";
 import { formatToBRL } from "../../../util/currencyFormatter";
 import { EmptyGenericContent } from "../../../components/emptyGenericContent/EmptyGenericContent";
