@@ -1,8 +1,10 @@
-.BookPageContentContainer {
+.bookPageContentContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-color: var(--white);
 
     gap: 20px;
 
@@ -10,24 +12,24 @@
     padding: 60px 288px 80px;
 }
 
-.BookPageContentContainer img {
+.bookPageContentContainer img {
     min-width: 300px;
 }
 
-.BookPageContentTitleContainer {
+.bookPageContentTitleContainer {
     text-align: center;
 }
 
-.BookPageContentTitleContainer p:nth-of-type(1) {
+.bookPageContentTitleContainer p:nth-of-type(1) {
     font-size: 38px;
     font-weight: 700;
 }
 
-.BookPageContentTitleContainer p:nth-of-type(2) {
+.bookPageContentTitleContainer p:nth-of-type(2) {
     font-size: 24px;
 }
 
-.BookPageContentCategorieContainer {
+.bookPageContentCategorieContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,29 +40,29 @@
     gap: 10px;
 }
 
-.BookPageContentAuthor {
+.bookPageContentAuthor {
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.BookPageContentAuthor > h2 {
+.bookPageContentAuthor > h2 {
     font-size: 28px;
     font-weight: 700;
 
     margin-bottom: 20px;
 }
 
-.BookPageContentAuthor > p {
+.bookPageContentAuthor > p {
     font-size: 18px;
 }
 
-.BookPageContentSinopse > h2 {
+.bookPageContentSinopse > h2 {
     font-size: 28px;
     font-weight: 700;
 
     margin-bottom: 20px;
 }
 
-.BookPageContentSinopse > p {
+.bookPageContentSinopse > p {
     font-size: 18px;
 }

@@ -7,7 +7,7 @@ export function FavoritesContent() {
     const { favBooks } = useFavBooks();
 
     return (
-        <div className="FavoritesContentContainer">
+        <div className="favoritesContentContainer">
             <h1>Your Favorites Details</h1>
 
             {favBooks.length === 0 ? (

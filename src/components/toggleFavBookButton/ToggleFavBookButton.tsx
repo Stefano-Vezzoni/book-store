@@ -11,7 +11,7 @@ export function ToggleFavBookButton({ book }: IToggleFavBookButton) {
     const { toggleFavBook } = useFavBooks();
 
     return (
-        <button className="ToggleFavBookContainer" onClick={() => toggleFavBook(book)}>
+        <button className="toggleFavBookContainer" onClick={() => toggleFavBook(book)}>
             <FavoriteBookIcon />
         </button>
     );

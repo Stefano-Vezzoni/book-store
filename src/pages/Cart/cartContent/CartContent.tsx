@@ -12,7 +12,7 @@ export function CartContent() {
     }
 
     return (
-        <div className="CartContentContainer">
+        <div className="cartContentContainer">
             <h1>Your Cart Details</h1>
 
             {cart.length === 0 ? (

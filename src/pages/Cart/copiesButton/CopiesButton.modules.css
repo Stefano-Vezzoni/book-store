@@ -1,4 +1,4 @@
-.CopiesButtonContainer {
+.copiesButtonContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,12 +6,12 @@
     gap: 12px;
 }
 
-.CopiesButtonContainer > p {
+.copiesButtonContainer > p {
     font-size: 18px;
     padding-bottom: 4px;
 }
 
-.CounterContainer {
+.counterContainer {
     display: flex;
     gap: 4px;
 
@@ -21,18 +21,18 @@
     padding: 6px;
 }
 
-.CounterContainer > button {
+.counterContainer > button {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.CounterContainer > button > svg {
+.counterContainer > button > svg {
     width: 14px;
     height: 14px;
 }
 
-.CounterContainer > p {
+.counterContainer > p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }

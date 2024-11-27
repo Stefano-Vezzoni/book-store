@@ -13,10 +13,10 @@ export function CopiesButton({ bookId }: ICopiesButton) {
     const quantity = bookInCart ? bookInCart.quantity : 0;
 
     return (
-        <div className="CopiesButtonContainer">
+        <div className="copiesButtonContainer">
             <p>Copies</p>
 
-            <div className="CounterContainer">
+            <div className="counterContainer">
                 <button onClick={() => decreaseQuantity(bookId)}>
                     <Icon icon="ic:round-minus" />
                 </button>

@@ -11,10 +11,10 @@ export function FavoriteItem({ book }: IFavoriteItem) {
     const navigate = useNavigate();
 
     return (
-        <div className="FavoriteItemContainer">
+        <div className="favoriteItemContainer">
             <img src={book.image} onClick={() => navigate(`/bookpage/${book.id}`)} />
 
-            <div className="FavoriteItemTitleContainer">
+            <div className="favoriteItemTitleContainer">
                 <p>{book.title}</p>
                 <p>
                     <strong>Author: </strong>

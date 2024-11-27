@@ -23,7 +23,7 @@ export function OurBestPicks() {
     }
 
     return (
-        <div className="OurBestPicksContainer">
+        <div className="ourBestPicksContainer">
             <h2>Our Best Picks </h2>
 
             <div className="bestBooks">

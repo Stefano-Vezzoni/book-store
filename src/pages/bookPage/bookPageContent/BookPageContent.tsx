@@ -11,21 +11,21 @@ export function BookPageContent() {
     if (!currentBook) return <p>Book not found</p>;
 
     return (
-        <div className="BookPageContentContainer">
-            <div className="BookPageContentTitleContainer">
+        <div className="bookPageContentContainer">
+            <div className="bookPageContentTitleContainer">
                 <p>{currentBook.title}</p>
                 <p>{currentBook.author}</p>
             </div>
 
             <img src={bookExample} />
 
-            <div className="BookPageContentCategorieContainer">
+            <div className="bookPageContentCategorieContainer">
                 {currentBook.categories.map((categorie) => {
                     return <CategorieButton key={categorie} name={categorie} />;
                 })}
             </div>
 
-            <div className="BookPageContentAuthor">
+            <div className="bookPageContentAuthor">
                 <h2>Author: {currentBook.author}</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum tenetur,
@@ -37,7 +37,7 @@ export function BookPageContent() {
                 </p>
             </div>
 
-            <div className="BookPageContentSinopse">
+            <div className="bookPageContentSinopse">
                 <h2>Sinopse</h2>
                 <p>
                     {currentBook.synopsis} Lorem ipsum dolor sit amet consectetur, adipisicing elit.
