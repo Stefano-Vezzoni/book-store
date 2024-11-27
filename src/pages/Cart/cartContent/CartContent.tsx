@@ -3,8 +3,11 @@ import { useCart } from "../../../hooks/useCart";
 import { CartItem } from "../cartItem/CartItem";
 import { formatToBRL } from "../../../util/currencyFormatter";
 import { EmptyGenericContent } from "../../../components/emptyGenericContent/EmptyGenericContent";
+import { useState } from "react";
+import { CheckoutModal } from "../checkoutModal/CheckoutModal";
 
 export function CartContent() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const { cart } = useCart();
 
     function getTotalPrice() {
@@ -34,10 +37,14 @@ export function CartContent() {
 
                     <div className="checkoutContainer">
                         <p>Total Price: {formatToBRL(getTotalPrice())}</p>
-                        <button>Proceed to Checkout</button>
+                        <button onClick={() => setIsModalOpen(!isModalOpen)}>
+                            Proceed to Checkout
+                        </button>
                     </div>
                 </>
             )}
+
+            {isModalOpen && <CheckoutModal />}
         </div>
     );
 }

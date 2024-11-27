@@ -49,13 +49,13 @@ export function ShopContent() {
         }
     }
 
-    function openModal() {
-        setIsModalOpen(true);
-    }
+    // function openModal() {
+    //     setIsModalOpen(true);
+    // }
 
-    function closeModal() {
-        setIsModalOpen(false);
-    }
+    // function closeModal() {
+    //     setIsModalOpen(false);
+    // }
 
     return (
         <div className="shopContentContainer">
@@ -71,14 +71,17 @@ export function ShopContent() {
                     />
                 ))}
 
-                <button className="shopContainerCustomFilter" onClick={openModal}>
+                <button
+                    className="shopContainerCustomFilter"
+                    onClick={() => setIsModalOpen(!isModalOpen)}
+                >
                     <img src={filterIcon} />
                     Filter
                 </button>
 
                 <FilterModal
                     isOpen={isModalOpen}
-                    onClose={closeModal}
+                    onClose={() => setIsModalOpen(!isModalOpen)}
                     handleCategoriesFilter={handleCategoriesFilter}
                     selectedCategories={selectedCategories}
                 />
