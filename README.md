@@ -98,4 +98,6 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE.md) pa
 
 ➜ npm install concurrently --save-dev
 
+➜ npm i react-hook-form zod @hookform/resolvers
+
 ```

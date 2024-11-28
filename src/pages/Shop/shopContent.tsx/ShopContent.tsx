@@ -49,14 +49,6 @@ export function ShopContent() {
         }
     }
 
-    // function openModal() {
-    //     setIsModalOpen(true);
-    // }
-
-    // function closeModal() {
-    //     setIsModalOpen(false);
-    // }
-
     return (
         <div className="shopContentContainer">
             <h1>Explore All Books Here</h1>
@@ -90,14 +82,7 @@ export function ShopContent() {
             <div className="bookListContainer">
                 {paginatedBooks?.map((book) => (
                     <div className="bookPlusToggleFav" key={book.id}>
-                        <BookCard
-                            id={book.id}
-                            key={book.id}
-                            title={book.title}
-                            author={book.author}
-                            price={book.price}
-                            image={book.image}
-                        />
+                        <BookCard book={book} />
 
                         <ToggleFavBookButton book={book} />
                     </div>

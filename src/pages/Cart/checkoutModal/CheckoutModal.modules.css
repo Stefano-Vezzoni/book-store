@@ -10,3 +10,8 @@
     align-items: center;
     z-index: 1000;
 }
+
+.checkoutFormError {
+    color: red;
+    font-size: 0.875rem;
+}

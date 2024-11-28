@@ -1,13 +1,13 @@
 import { createContext, useEffect, useState } from "react";
-import { IBookCard } from "../components/bookCard/BookCard";
+import { IBook } from "../api/fetchBooks";
 
-interface ICartItem extends IBookCard {
+interface ICartItem extends IBook {
     quantity: number;
 }
 
 interface CartContextProps {
     cart: ICartItem[];
-    addToCart: (book: IBookCard) => void;
+    addToCart: (book: IBook) => void;
     increaseQuantity: (bookId: number) => void;
     decreaseQuantity: (bookId: number) => void;
     removeFromCart: (bookId: number) => void;
@@ -27,7 +27,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         localStorage.setItem("cart", JSON.stringify(cart));
     }, [cart]);
 
-    function addToCart(book: IBookCard) {
+    function addToCart(book: IBook) {
         setCart((prevCart) => {
             const existingItem = prevCart.find((item) => item.id === book.id);
             if (existingItem) {

@@ -1,12 +1,13 @@
 import "./CartItem.modules.css";
 import bookExample from "../../../assets/bookExample.svg";
 import { CopiesButton } from "../copiesButton/CopiesButton";
-import { IBookCard } from "../../../components/bookCard/BookCard";
 import { formatToBRL } from "../../../util/currencyFormatter";
 import { useCart } from "../../../hooks/useCart";
 import xIcon from "../../../assets/icons/x-icon.svg";
+import { IBook } from "../../../api/fetchBooks";
 
-export function CartItem({ id, title, author, price }: IBookCard) {
+export function CartItem(book: IBook) {
+    const { id, title, author, price } = book;
     const { removeFromCart } = useCart();
 
     return (

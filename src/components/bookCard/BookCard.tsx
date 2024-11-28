@@ -3,16 +3,14 @@ import { AddToCartButton } from "../addToCartButton/AddToCartButton";
 import { useCart } from "../../hooks/useCart";
 import { formatToBRL } from "../../util/currencyFormatter";
 import { useNavigate } from "react-router-dom";
+import { IBook } from "../../api/fetchBooks";
 
-export interface IBookCard {
-    id: number;
-    title: string;
-    author: string;
-    price: number;
-    image: string;
+interface IBookCard {
+    book: IBook;
 }
 
-export function BookCard({ id, title, author, price, image }: IBookCard) {
+export function BookCard({ book }: IBookCard) {
+    const { id, image, title, author, price } = book;
     const { addToCart } = useCart();
     const navigate = useNavigate();
 
@@ -30,10 +28,7 @@ export function BookCard({ id, title, author, price, image }: IBookCard) {
                 <p>Available across all branches</p>
             </div>
 
-            <AddToCartButton
-                buttonName="Add to Cart"
-                onClick={() => addToCart({ id, title, author, price, image })}
-            />
+            <AddToCartButton buttonName="Add to Cart" onClick={() => addToCart(book)} />
         </div>
     );
 }
