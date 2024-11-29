@@ -25,7 +25,7 @@ export function CheckoutFormField({
     return (
         <div className="checkoutFormFieldContainer">
             <label htmlFor={id}>
-                {label} {isOptional && <span>(Optional)</span>}
+                {label} {isOptional ? <span>(Optional)</span> : <span>*</span>}
             </label>
             <input type="text" id={id} {...register(id)} />
             {errors && <p className="checkoutFormError">{errors.message}</p>}
