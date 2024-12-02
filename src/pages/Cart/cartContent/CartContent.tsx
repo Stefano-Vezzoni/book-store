@@ -31,11 +31,13 @@ export function CartContent() {
                                 author={book.author}
                                 price={book.price}
                                 image={book.image}
+                                synopsis={book.synopsis}
+                                categories={book.categories}
                             />
                         ))}
                     </div>
 
-                    <div className="checkoutContainer">
+                    <div className="cartContentCheckoutContainer">
                         <p>Total Price: {formatToBRL(getTotalPrice())}</p>
                         <button onClick={() => setIsModalOpen(!isModalOpen)}>
                             Proceed to Checkout
@@ -44,7 +46,9 @@ export function CartContent() {
                 </>
             )}
 
-            {isModalOpen && <CheckoutModal />}
+            {isModalOpen && (
+                <CheckoutModal isOpen={isModalOpen} onClose={() => setIsModalOpen(!isModalOpen)} />
+            )}
         </div>
     );
 }

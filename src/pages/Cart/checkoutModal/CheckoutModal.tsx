@@ -1,9 +1,15 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import "./CheckoutModal.modules.css";
+import xIcon from "../../../assets/icons/x-icon.svg";
 import { z } from "zod";
 import { CheckoutFormField } from "../checkoutFormField/CheckoutFormField";
 import { useCart } from "../../../hooks/useCart";
+
+interface ICheckoutModal {
+    isOpen: boolean;
+    onClose: () => void;
+}
 
 const checkoutSchema = z.object({
     firstName: z.string().min(1, "First Name is required"),
@@ -22,7 +28,7 @@ const checkoutSchema = z.object({
 
 export type checkoutFormValues = z.infer<typeof checkoutSchema>;
 
-export function CheckoutModal() {
+export function CheckoutModal({ isOpen, onClose }: ICheckoutModal) {
     const {
         register,
         handleSubmit,
@@ -38,10 +44,16 @@ export function CheckoutModal() {
         console.log(data);
     }
 
+    if (!isOpen) return null;
+
     return (
         <div className="checkoutModalContainer">
             <form onSubmit={handleSubmit(onSubmit)} className="form">
                 <h2>Checkout Details</h2>
+
+                <button onClick={onClose} className="checkoutModalCloseButton">
+                    <img src={xIcon} />
+                </button>
 
                 <div className="checkoutModalFormFields">
                     <CheckoutFormField
@@ -117,7 +129,9 @@ export function CheckoutModal() {
                     </table>
                 </div>
 
-                <button type="submit">Submit</button>
+                <button className="checkoutModalSubmitButton" type="submit">
+                    Submit
+                </button>
             </form>
         </div>
     );

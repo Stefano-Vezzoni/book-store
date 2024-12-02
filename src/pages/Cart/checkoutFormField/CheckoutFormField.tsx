@@ -10,11 +10,6 @@ interface ICheckoutFormField {
     isOptional?: boolean;
 }
 
-//Terminar a parte de design dos campos etc
-//Terminar a parte de design dos campos etc
-//Terminar a parte de design dos campos etc
-//Terminar a parte de design dos campos etc
-
 export function CheckoutFormField({
     id,
     label,

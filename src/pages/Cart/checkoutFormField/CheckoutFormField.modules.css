@@ -9,6 +9,6 @@
 
 .checkoutFormFieldContainer > input {
     background-color: var(--gray-200);
-    padding: 14px 0px;
+    padding: 14px 14px;
     border-radius: 4px;
 }
