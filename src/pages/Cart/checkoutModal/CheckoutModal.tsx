@@ -4,7 +4,8 @@ import "./CheckoutModal.modules.css";
 import xIcon from "../../../assets/icons/x-icon.svg";
 import { z } from "zod";
 import { CheckoutFormField } from "../checkoutFormField/CheckoutFormField";
-import { useCart } from "../../../hooks/useCart";
+import { ModalTable } from "./modalTable/ModalTable";
+import { formFieldElements } from "./formFieldElements/FormFieldElements";
 
 interface ICheckoutModal {
     isOpen: boolean;
@@ -20,12 +21,6 @@ const checkoutSchema = z.object({
     state: z.string().min(1, "State / County is required"),
 });
 
-//Tirar a tabela daqui e colocar em outro componente e fazer o design do botão submit
-//Tirar a tabela daqui e colocar em outro componente e fazer o design do botão submit
-//Tirar a tabela daqui e colocar em outro componente e fazer o design do botão submit
-//Tirar a tabela daqui e colocar em outro componente e fazer o design do botão submit
-//Tirar a tabela daqui e colocar em outro componente e fazer o design do botão submit
-
 export type checkoutFormValues = z.infer<typeof checkoutSchema>;
 
 export function CheckoutModal({ isOpen, onClose }: ICheckoutModal) {
@@ -36,9 +31,6 @@ export function CheckoutModal({ isOpen, onClose }: ICheckoutModal) {
     } = useForm<checkoutFormValues>({
         resolver: zodResolver(checkoutSchema),
     });
-
-    const { cart } = useCart();
-    const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
     function onSubmit(data: checkoutFormValues) {
         console.log(data);
@@ -56,77 +48,22 @@ export function CheckoutModal({ isOpen, onClose }: ICheckoutModal) {
                 </button>
 
                 <div className="checkoutModalFormFields">
-                    <CheckoutFormField
-                        id="firstName"
-                        label="First Name"
-                        register={register}
-                        errors={errors.firstName}
-                    />
-
-                    <CheckoutFormField
-                        id="lastName"
-                        label="Last Name"
-                        register={register}
-                        errors={errors.lastName}
-                    />
-
-                    <CheckoutFormField
-                        id="streetAddress"
-                        label="Street Address"
-                        register={register}
-                        errors={errors.streetAddress}
-                    />
-
-                    <CheckoutFormField
-                        id="additionalInfo"
-                        label="Apartment/Suite"
-                        register={register}
-                        errors={errors.additionalInfo}
-                        isOptional
-                    />
-
-                    <CheckoutFormField
-                        id="town"
-                        label="Town / City"
-                        register={register}
-                        errors={errors.town}
-                    />
-
-                    <CheckoutFormField
-                        id="state"
-                        label="State / County"
-                        register={register}
-                        errors={errors.state}
-                    />
+                    {formFieldElements.map((element) => (
+                        <CheckoutFormField
+                            key={element.id}
+                            id={element.id}
+                            label={element.label}
+                            register={register}
+                            errors={errors[element.id]}
+                            isOptional={element.isOptional || false}
+                        />
+                    ))}
                 </div>
 
                 <div className="checkoutModalYourOrderContainer">
                     <h3>Your Order</h3>
 
-                    <table className="checkoutTableContainer">
-                        <thead>
-                            <tr>
-                                <th>Product</th>
-                                <th>Subtotal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {cart.map((cartItem) => (
-                                <tr key={cartItem.id}>
-                                    <td>
-                                        {cartItem.title} (x{cartItem.quantity})
-                                    </td>
-                                    <td className="checkoutPriceElements">
-                                        ${(cartItem.price * cartItem.quantity).toFixed(2)}
-                                    </td>
-                                </tr>
-                            ))}
-                            <tr className="checkoutTableTotalContainer">
-                                <td>Total</td>
-                                <td className="checkoutPriceElements">${totalPrice.toFixed(2)}</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <ModalTable />
                 </div>
 
                 <button className="checkoutModalSubmitButton" type="submit">

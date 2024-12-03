@@ -1,0 +1,29 @@
+.checkoutTableContainer {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.checkoutTableContainer th {
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.checkoutTableContainer th,
+.checkoutTableContainer td {
+    padding: 8px 0px;
+    text-align: left;
+}
+
+.checkoutTableContainer tbody tr:not(:last-child) td {
+    border-bottom: 1px solid #ddd;
+}
+
+.checkoutPriceElements {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.checkoutTableTotalContainer {
+    font-weight: bold;
+    font-size: 16px;
+}
