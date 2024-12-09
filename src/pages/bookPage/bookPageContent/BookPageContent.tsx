@@ -1,7 +1,6 @@
 import "./BookPageContent.modules.css";
 import { CategorieButton } from "../../../components/categorieButton/CategorieButton";
 import { useParams } from "react-router-dom";
-import bookExample from "../../../assets/bookExample.svg";
 import { useBookById } from "../../../hooks/useBooks";
 
 export function BookPageContent() {
@@ -17,7 +16,7 @@ export function BookPageContent() {
                 <p>{currentBook.author}</p>
             </div>
 
-            <img src={bookExample} />
+            <img src={currentBook.image} />
 
             <div className="bookPageContentCategorieContainer">
                 {currentBook.categories.map((categorie) => {

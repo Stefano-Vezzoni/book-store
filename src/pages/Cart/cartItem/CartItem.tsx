@@ -1,5 +1,4 @@
 import "./CartItem.modules.css";
-import bookExample from "../../../assets/bookExample.svg";
 import { CopiesButton } from "../copiesButton/CopiesButton";
 import { formatToBRL } from "../../../util/currencyFormatter";
 import { useCart } from "../../../hooks/useCart";
@@ -7,12 +6,13 @@ import xIcon from "../../../assets/icons/x-icon.svg";
 import { IBook } from "../../../api/fetchBooks";
 
 export function CartItem(book: IBook) {
-    const { id, title, author, price } = book;
+    const { id, title, author, price, image } = book;
     const { removeFromCart } = useCart();
+    console.log(image);
 
     return (
         <div className="cartItemContainer">
-            <img src={bookExample} />
+            <img src={image} />
 
             <div className="cartItemTitles">
                 <p>{title}</p>

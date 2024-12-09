@@ -6,7 +6,7 @@ import { OurBestPicks } from "./ourBestPicks/OurBestPicks";
 
 export function Home() {
     return (
-        <div className="homeContainer">
+        <div>
             <Header />
             <Hero />
             <OurBestPicks />

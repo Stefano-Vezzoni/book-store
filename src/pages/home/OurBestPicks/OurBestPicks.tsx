@@ -2,6 +2,7 @@ import { useState } from "react";
 import { fetchBooks, IBook } from "../../../api/fetchBooks";
 import "./OurBestPicks.modules.css";
 import { useQuery } from "@tanstack/react-query";
+import { BestPicksCard } from "../bestPicksCard/BestPicksCard";
 
 export function OurBestPicks() {
     const { data } = useQuery<IBook[]>({
@@ -28,13 +29,7 @@ export function OurBestPicks() {
 
             <div className="bestBooks">
                 {booksByPage()?.map((book) => (
-                    <div key={book.id}>
-                        <img src={book.image} />
-                        <span>
-                            <p>{book.title}</p>
-                            <p>{book.author} </p>
-                        </span>
-                    </div>
+                    <BestPicksCard key={book.id} book={book} />
                 ))}
             </div>
 

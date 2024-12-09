@@ -23,7 +23,7 @@
             "author": "Douglas Crockford",
             "synopsis": "An insightful guide into the powerful parts of JavaScript.",
             "price": 50,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample1.svg",
             "categories": ["Advanced", "Programming", "JavaScript", "Best Practices"]
         },
         {
@@ -32,7 +32,7 @@
             "author": "Kyle Simpson",
             "synopsis": "Deep dive into JavaScript scope and closures, unraveling the complexities.",
             "price": 45,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample2.jpg",
             "categories": ["Advanced", "Programming", "JavaScript", "Advanced Concepts"]
         },
         {
@@ -41,7 +41,7 @@
             "author": "Robert C. Martin",
             "synopsis": "A guide to writing clean, maintainable code by one of the most respected software engineers.",
             "price": 80,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample3.jpg",
             "categories": ["Intermediate", "Programming", "Code Quality", "Software Engineering"]
         },
         {
@@ -50,7 +50,7 @@
             "author": "Andrew Hunt, David Thomas",
             "synopsis": "Tips and tricks from two experienced programmers on how to write high-quality code.",
             "price": 70,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample4.jpg",
             "categories": ["Intermediate", "Programming", "Software Engineering", "Best Practices"]
         },
         {
@@ -59,7 +59,7 @@
             "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
             "synopsis": "The definitive book on design patterns, offering solutions to common software design problems.",
             "price": 65,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample5.jpg",
             "categories": ["Advanced", "Programming", "Design Patterns", "Object-Oriented"]
         },
         {
@@ -68,7 +68,7 @@
             "author": "Marijn Haverbeke",
             "synopsis": "A modern introduction to programming with JavaScript.",
             "price": 40,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample1.svg",
             "categories": ["Beginner", "Programming", "JavaScript", "Introduction"]
         },
         {
@@ -77,7 +77,7 @@
             "author": "Martin Fowler",
             "synopsis": "A step-by-step guide to refactoring, improving code without changing its external behavior.",
             "price": 60,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample2.jpg",
             "categories": ["Intermediate", "Programming", "Code Quality", "Refactoring"]
         },
         {
@@ -86,7 +86,7 @@
             "author": "Michael Sipser",
             "synopsis": "A comprehensive guide to the theory of computation, covering key concepts and techniques.",
             "price": 75,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample3.jpg",
             "categories": ["Advanced", "Computer Science", "Theory", "Computation"]
         },
         {
@@ -95,7 +95,7 @@
             "author": "Joshua Bloch",
             "synopsis": "Best practices for writing Java code.",
             "price": 60,
-            "image": "src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample4.jpg",
             "categories": ["Intermediate", "Programming", "Java", "Best Practices"]
         },
         {
@@ -104,7 +104,7 @@
             "author": "Frederick P. Brooks Jr.",
             "synopsis": "Insights into project management in software engineering.",
             "price": 48,
-            "image": "src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample5.jpg",
             "categories": ["Intermediate", "Software Engineering", "Project Management", "Essays"]
         },
         {
@@ -113,7 +113,7 @@
             "author": "Martin Fowler",
             "synopsis": "Techniques for improving code structure.",
             "price": 52,
-            "image": "src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample1.svg",
             "categories": ["Intermediate", "Programming", "Code Quality", "Refactoring"]
         },
         {
@@ -122,7 +122,7 @@
             "author": "Stoyan Stefanov",
             "synopsis": "Effective design patterns in JavaScript.",
             "price": 40,
-            "image": "src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample2.jpg",
             "categories": ["Intermediate", "Programming", "JavaScript", "Design Patterns"]
         },
         {
@@ -131,7 +131,7 @@
             "author": "Eric Matthes",
             "synopsis": "A hands-on guide to Python programming for Bs.",
             "price": 55,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample3.jpg",
             "categories": ["Beginner", "Programming", "Python", "Introduction"]
         },
         {
@@ -140,7 +140,7 @@
             "author": "Alex Banks, Eve Porcello",
             "synopsis": "An introduction to React, explaining its core principles and concepts.",
             "price": 45,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample4.jpg",
             "categories": ["Beginner", "Programming", "React", "JavaScript"]
         },
         {
@@ -149,7 +149,7 @@
             "author": "David Flanagan",
             "synopsis": "A complete guide to JavaScript programming and its ecosystem.",
             "price": 90,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample5.jpg",
             "categories": ["Programming", "JavaScript", "Reference"]
         },
         {
@@ -158,7 +158,7 @@
             "author": "Gayle Laakmann McDowell",
             "synopsis": "A practical guide to coding interview preparation.",
             "price": 60,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample1.svg",
             "categories": ["Intermediate", "Programming", "Interviews", "Algorithms"]
         },
         {
@@ -167,7 +167,7 @@
             "author": "Eric Freeman, Elisabeth Robson",
             "synopsis": "A B-friendly guide to design patterns, with engaging examples.",
             "price": 50,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample2.jpg",
             "categories": ["Beginner", "Programming", "Design Patterns", "Introduction"]
         },
         {
@@ -176,7 +176,7 @@
             "author": "Donald Knuth",
             "synopsis": "A comprehensive series on algorithms and computer science theory.",
             "price": 200,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample3.jpg",
             "categories": ["Advanced", "Computer Science", "Algorithms", "Theory"]
         },
         {
@@ -185,7 +185,7 @@
             "author": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein",
             "synopsis": "A thorough guide to algorithms and their applications.",
             "price": 90,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample4.jpg",
             "categories": ["Advanced", "Computer Science", "Algorithms", "Data Structures"]
         },
         {
@@ -194,7 +194,7 @@
             "author": "Brian W. Kernighan, Dennis M. Ritchie",
             "synopsis": "The classic book on the C programming language by its creators.",
             "price": 55,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample5.jpg",
             "categories": ["Intermediate", "Programming", "C Language", "Reference"]
         },
         {
@@ -203,7 +203,7 @@
             "author": "Steve Klabnik, Carol Nichols",
             "synopsis": "Comprehensive guide to Rust programming and memory safety.",
             "price": 65,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample1.svg",
             "categories": ["Intermediate", "Programming", "Rust", "Systems Programming"]
         },
         {
@@ -212,7 +212,7 @@
             "author": "Dave Thomas",
             "synopsis": "Learn the Elixir language and its concurrency capabilities.",
             "price": 60,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample2.jpg",
             "categories": ["Intermediate", "Programming", "Elixir", "Functional Programming"]
         },
         {
@@ -221,7 +221,7 @@
             "author": "Ramez Elmasri, Shamkant Navathe",
             "synopsis": "Comprehensive book on database concepts and models.",
             "price": 85,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample3.jpg",
             "categories": ["Advanced", "Database", "Data Management", "Computer Science"]
         },
         {
@@ -230,7 +230,7 @@
             "author": "Wes McKinney",
             "synopsis": "A practical guide to using Python for data science.",
             "price": 70,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample4.jpg",
             "categories": ["Beginner", "Data Science", "Python", "Data Analysis"]
         },
         {
@@ -239,7 +239,7 @@
             "author": "Stuart Russell, Peter Norvig",
             "synopsis": "An authoritative text on AI and machine learning.",
             "price": 100,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample5.jpg",
             "categories": [
                 "Advanced",
                 "Artificial Intelligence",
@@ -253,7 +253,7 @@
             "author": "James F. Kurose, Keith W. Ross",
             "synopsis": "Detailed overview of computer networking principles and practices.",
             "price": 85,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample1.svg",
             "categories": ["Intermediate", "Networking", "Computer Science", "Communications"]
         },
         {
@@ -262,7 +262,7 @@
             "author": "Joel Grus",
             "synopsis": "An introductory book to data science and algorithms.",
             "price": 60,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample2.jpg",
             "categories": ["Beginner", "Data Science", "Machine Learning", "Python"]
         },
         {
@@ -271,7 +271,7 @@
             "author": "Brian Goetz",
             "synopsis": "Expert techniques for concurrent programming in Java.",
             "price": 90,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample3.jpg",
             "categories": ["Advanced", "Programming", "Java", "Concurrency"]
         },
         {
@@ -280,7 +280,7 @@
             "author": "Aurélien Géron",
             "synopsis": "A practical approach to machine learning with popular libraries.",
             "price": 75,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample4.jpg",
             "categories": ["Intermediate", "Machine Learning", "Python", "Data Science"]
         },
         {
@@ -289,7 +289,7 @@
             "author": "Ian Goodfellow, Yoshua Bengio, Aaron Courville",
             "synopsis": "Comprehensive resource on deep learning principles and practices.",
             "price": 120,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample5.jpg",
             "categories": ["Advanced", "Machine Learning", "Deep Learning", "AI"]
         },
         {
@@ -298,7 +298,7 @@
             "author": "Scott Chacon, Ben Straub",
             "synopsis": "The complete guide to Git, from B to Advanced.",
             "price": 40,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample1.svg",
             "categories": ["Beginner", "Version Control", "Git", "Programming"]
         },
         {
@@ -307,7 +307,7 @@
             "author": "Jennifer Niederst Robbins",
             "synopsis": "B's guide to web design, covering HTML, CSS, and more.",
             "price": 45,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample2.jpg",
             "categories": ["Beginner", "Web Design", "HTML", "CSS"]
         },
         {
@@ -316,7 +316,7 @@
             "author": "Noam Nisan, Shimon Schocken",
             "synopsis": "Building a modern computer from first principles.",
             "price": 65,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample3.jpg",
             "categories": ["Advanced", "Computer Science", "Hardware", "Theory"]
         },
         {
@@ -325,7 +325,7 @@
             "author": "Martin Odersky, Lex Spoon, Bill Venners",
             "synopsis": "An introduction to the Scala programming language.",
             "price": 85,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample4.jpg",
             "categories": ["Advanced", "Programming", "Scala", "Functional Programming"]
         },
         {
@@ -334,7 +334,7 @@
             "author": "Jon Skeet",
             "synopsis": "A comprehensive guide to Advanced C# programming concepts.",
             "price": 70,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample5.jpg",
             "categories": ["Advanced", "Programming", "C#", "Advanced Concepts"]
         },
         {
@@ -343,7 +343,7 @@
             "author": "Jon Duckett",
             "synopsis": "A visual approach to JavaScript and jQuery for Bs.",
             "price": 60,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample1.svg",
             "categories": ["Beginner", "Programming", "JavaScript", "Front-End"]
         },
         {
@@ -352,7 +352,7 @@
             "author": "Robin Nixon",
             "synopsis": "A hands-on guide to full-stack web development.",
             "price": 50,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample2.jpg",
             "categories": ["Beginner", "Web Development", "PHP", "MySQL"]
         },
         {
@@ -361,7 +361,7 @@
             "author": "Kelsey Hightower, Brendan Burns, Joe Beda",
             "synopsis": "A guide to managing containers with Kubernetes.",
             "price": 75,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample3.jpg",
             "categories": ["Intermediate", "Cloud", "Containers", "Kubernetes"]
         },
         {
@@ -370,7 +370,7 @@
             "author": "Jez Humble, David Farley",
             "synopsis": "Strategies for building, testing, and deploying software.",
             "price": 80,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample4.jpg",
             "categories": ["Advanced", "DevOps", "Software Engineering", "Automation"]
         },
         {
@@ -379,7 +379,7 @@
             "author": "Jeff Geerling",
             "synopsis": "An introduction to automating with Ansible.",
             "price": 55,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample5.jpg",
             "categories": ["Intermediate", "DevOps", "Automation", "Ansible"]
         },
         {
@@ -388,7 +388,7 @@
             "author": "Robin Wieruch",
             "synopsis": "Practical guide to building React applications.",
             "price": 40,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample1.svg",
             "categories": ["Beginner", "Programming", "React", "JavaScript"]
         },
         {
@@ -397,7 +397,7 @@
             "author": "Cay S. Horstmann",
             "synopsis": "Quick guide to learning Scala for Java programmers.",
             "price": 65,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample2.jpg",
             "categories": ["Intermediate", "Programming", "Scala", "Java"]
         },
         {
@@ -406,7 +406,7 @@
             "author": "Nigel Poulton",
             "synopsis": "In-depth exploration of Docker containers and deployment.",
             "price": 65,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample3.jpg",
             "categories": ["Intermediate", "Cloud", "Containers", "Docker"]
         },
         {
@@ -415,7 +415,7 @@
             "author": "Eric Freeman, Bert Bates",
             "synopsis": "A B-friendly approach to understanding design patterns.",
             "price": 50,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample4.jpg",
             "categories": ["Beginner", "Programming", "Design Patterns", "Software Engineering"]
         },
         {
@@ -424,7 +424,7 @@
             "author": "Kyle Simpson",
             "synopsis": "A deep dive into asynchronous JavaScript and performance optimization.",
             "price": 45,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample5.jpg",
             "categories": ["Advanced", "Programming", "JavaScript", "Performance"]
         },
         {
@@ -433,7 +433,7 @@
             "author": "Drew Neil",
             "synopsis": "Tips and tricks to use Vim more effectively.",
             "price": 30,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample1.svg",
             "categories": ["Intermediate", "Programming", "Tools", "Vim"]
         },
         {
@@ -442,7 +442,7 @@
             "author": "Alex Banks, Eve Porcello",
             "synopsis": "An introduction to React and front-end development.",
             "price": 55,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample2.jpg",
             "categories": ["Beginner", "Programming", "React", "JavaScript"]
         },
         {
@@ -451,7 +451,7 @@
             "author": "Eric Matthes",
             "synopsis": "A hands-on introduction to programming with Python.",
             "price": 50,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample3.jpg",
             "categories": ["Beginner", "Programming", "Python", "Introduction"]
         },
         {
@@ -460,7 +460,7 @@
             "author": "Sam Newman",
             "synopsis": "An introduction to microservices architecture and its principles.",
             "price": 75,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample4.jpg",
             "categories": ["Advanced", "Architecture", "Microservices", "Software Engineering"]
         },
         {
@@ -469,7 +469,7 @@
             "author": "Dan Vanderkam",
             "synopsis": "Guidelines for using TypeScript effectively in your projects.",
             "price": 60,
-            "image": "./src/assets/bookExample.svg",
+            "image": "./src/assets/bookImages/bookExample5.jpg",
             "categories": ["Intermediate", "Programming", "TypeScript", "JavaScript"]
         }
     ]
