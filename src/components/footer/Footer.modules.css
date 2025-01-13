@@ -44,4 +44,10 @@
     display: flex;
     gap: 10px;
     color: var(--gray-800);
+    transition: transform 0.2s ease;
+}
+
+.socialMediaIcons > button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }

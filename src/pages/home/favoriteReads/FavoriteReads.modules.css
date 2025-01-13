@@ -64,8 +64,17 @@
     border: 1px solid var(--yellow-700);
     color: var(--white);
 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    will-change: transform, background-color;
+
     border-radius: 8px;
     font-size: 14px;
     margin-top: 32px;
     padding: 12px 48px;
+}
+
+.exploreButton:hover {
+    background-color: var(--brown-700);
+    transform: scale(1.05);
+    cursor: pointer;
 }

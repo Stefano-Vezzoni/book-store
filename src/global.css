@@ -11,9 +11,11 @@
 
     --orange-600: #ff7700;
 
+    --brown-600: #684810;
     --brown-700: #4b330b;
 
     --blue-200: #64aef4;
+    --blue-200-rgb: 100, 174, 244;
 
     --gray: #a59f9f;
     --gray-200: #dbdbdb;
@@ -41,6 +43,9 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     background-color: #1e1e1e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 button {

@@ -35,10 +35,16 @@
     height: 18px;
 
     border-radius: 9999px;
-
     border: 2px solid var(--blue-200);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .paginationDots > button.active {
     background-color: var(--blue-200);
+}
+
+.paginationDots > button:not(.active):hover {
+    background-color: rgba(var(--blue-200-rgb), 0.7);
+    transform: scale(1.05);
+    cursor: pointer;
 }

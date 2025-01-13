@@ -67,8 +67,16 @@
 
     background-color: var(--brown-700);
     color: var(--white);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    will-change: transform, background-color;
 
     font-size: 1rem;
     border-radius: 6px;
     padding: 10px 36px;
+}
+
+.searchButtonContainer > button:hover {
+    background-color: var(--brown-600);
+    transform: scale(1.05);
+    cursor: pointer;
 }
