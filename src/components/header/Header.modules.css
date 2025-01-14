@@ -24,6 +24,14 @@
     align-items: center;
     justify-content: center;
     gap: 60px;
+
+    transition: background-color 0.3s ease, color 0.2s ease;
+}
+
+.headerMidNavBar > a:hover {
+    color: var(--yellow-700);
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .headerLogo {
@@ -35,6 +43,10 @@
     color: var(--yellow-700);
     font-size: 1.75rem;
     font-weight: 700;
+}
+
+.headerLogo > a:nth-of-type(2) {
+    color: var(--yellow-700);
 }
 
 .navBar {
@@ -67,10 +79,17 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+
+    transition: background-color 0.3s ease, color 0.2s ease;
 }
 
 .headerEndNavBar > a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.headerEndNavBar > a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }

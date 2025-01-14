@@ -7,14 +7,14 @@ export function Header() {
     return (
         <div className="headerContainer">
             <div className="headerLogo">
-                <span>
+                <a href="/">
                     <img src={headerLogo} />
-                </span>
+                </a>
 
-                <span>
+                <a href="/">
                     <p>NETH</p>
                     <p>BOOKPOINT</p>
-                </span>
+                </a>
             </div>
 
             <div className="headerMidNavBar">

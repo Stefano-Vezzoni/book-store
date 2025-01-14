@@ -16,12 +16,15 @@
 
 .cartItemContainer > img {
     padding: 0px 22px;
+
+    width: 220px;
+    height: 250px;
 }
 
 .cartItemTitles {
     text-align: center;
 
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 
 .cartItemTitles p:nth-of-type(1) {
@@ -43,7 +46,8 @@
 }
 
 .cartItemPrice {
-    font-size: 16px;
+    text-align: center;
+    font-size: 18px;
 
     padding: 0px 23px;
 }

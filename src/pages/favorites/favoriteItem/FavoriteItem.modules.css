@@ -17,6 +17,9 @@
 .favoriteItemContainer > img {
     transition: transform 0.3 ease;
     padding: 0px 22px;
+
+    width: 220px;
+    height: 250px;
 }
 
 .favoriteItemContainer > img:hover {
