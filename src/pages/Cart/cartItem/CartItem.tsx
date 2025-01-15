@@ -4,15 +4,21 @@ import { formatToBRL } from "../../../util/currencyFormatter";
 import { useCart } from "../../../hooks/useCart";
 import xIcon from "../../../assets/icons/x-icon.svg";
 import { IBook } from "../../../api/fetchBooks";
+import { useNavigate } from "react-router-dom";
 
 export function CartItem(book: IBook) {
     const { id, title, author, price, image } = book;
     const { removeFromCart } = useCart();
     console.log(image);
+    const navigate = useNavigate();
+
+    function goToBookPage() {
+        navigate(`/bookpage/${book.id}`);
+    }
 
     return (
         <div className="cartItemContainer">
-            <img src={image} />
+            <img src={image} onClick={goToBookPage} />
 
             <div className="cartItemTitles">
                 <p>{title}</p>

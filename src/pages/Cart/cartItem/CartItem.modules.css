@@ -17,8 +17,15 @@
 .cartItemContainer > img {
     padding: 0px 22px;
 
+    transition: transform 0.2s ease;
+
     width: 220px;
     height: 250px;
+}
+
+.cartItemContainer > img:hover {
+    transform: scale(1.08);
+    cursor: pointer;
 }
 
 .cartItemTitles {

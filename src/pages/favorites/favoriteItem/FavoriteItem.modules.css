@@ -15,7 +15,7 @@
 }
 
 .favoriteItemContainer > img {
-    transition: transform 0.3 ease;
+    transition: transform 0.2s ease;
     padding: 0px 22px;
 
     width: 220px;
@@ -23,7 +23,7 @@
 }
 
 .favoriteItemContainer > img:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
     cursor: pointer;
 }
 
