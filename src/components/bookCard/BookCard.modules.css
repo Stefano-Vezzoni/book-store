@@ -16,6 +16,14 @@
 .bookCardContainer > img {
     height: 240px;
     padding: 0px 22px;
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    will-change: transform, background-color;
+}
+
+.bookCardContainer > img:hover {
+    transform: scale(1.08);
+    cursor: pointer;
 }
 
 .bookCardTitleContainer {
