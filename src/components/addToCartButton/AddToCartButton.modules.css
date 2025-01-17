@@ -5,14 +5,22 @@
     gap: 10px;
 
     border: 1px solid var(--yellow-800);
+    outline: 1px solid transparent;
     border-radius: 12px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 
     font-size: 14px;
     padding: 8px 32px;
     margin-top: 16px;
 }
 
-.addToCartButtonContainer img {
+.addToCartButtonContainer > img {
     max-width: 16px;
     max-height: 16px;
+}
+
+.addToCartButtonContainer:hover {
+    outline: 1px solid var(--yellow-800);
+    background-color: var(--yellow-100);
+    cursor: pointer;
 }
