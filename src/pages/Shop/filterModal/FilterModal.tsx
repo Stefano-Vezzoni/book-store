@@ -1,5 +1,5 @@
 import "./FilterModal.modules.css";
-import closeCircle from "../../../assets/icons/close-circle.svg";
+import xIcon from "../../../assets/icons/x-icon.svg";
 import { ButtonCheckbox } from "../../../components/buttonCheckBox/ButtonCheckBox";
 import { fetchFilterOptions, IFilterOptions } from "../../../api/fetchFilterOptions";
 import { useQuery } from "@tanstack/react-query";
@@ -29,7 +29,7 @@ export function FilterModal({
         <div className="filterModalContainer" onClick={onClose}>
             <div className="filterModalContent" onClick={(e) => e.stopPropagation()}>
                 <button onClick={onClose} className="filterModalCloseButton">
-                    <img src={closeCircle} />
+                    <img src={xIcon} />
                 </button>
 
                 <p>Additional Filters</p>
