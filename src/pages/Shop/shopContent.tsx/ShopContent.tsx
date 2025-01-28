@@ -57,7 +57,7 @@ export function ShopContent() {
                 <div className="shopContentSearchContainer">
                     <input
                         type="search"
-                        placeholder="Search  a Book"
+                        placeholder="Search a Book"
                         value={searchValue}
                         onChange={(e) => setSearchValue(e.target.value)}
                     />

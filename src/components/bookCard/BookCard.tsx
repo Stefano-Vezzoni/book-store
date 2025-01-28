@@ -14,6 +14,8 @@ export function BookCard({ book }: IBookCard) {
     const { addToCart } = useCart();
     const navigate = useNavigate();
 
+    console.log(image);
+
     return (
         <div className="bookCardContainer">
             <img src={image} onClick={() => navigate(`/bookpage/${id}`)} />

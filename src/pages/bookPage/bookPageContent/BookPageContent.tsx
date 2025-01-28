@@ -9,6 +9,10 @@ export function BookPageContent() {
 
     if (!currentBook) return <p>Book not found</p>;
 
+    function normalizeImagePath(path: string): string {
+        return path.startsWith("./") ? path.slice(1) : path;
+    }
+
     return (
         <div className="bookPageContentContainer">
             <div className="bookPageContentTitleContainer">
@@ -16,7 +20,7 @@ export function BookPageContent() {
                 <p>{currentBook.author}</p>
             </div>
 
-            <img src={currentBook.image} />
+            <img src={normalizeImagePath(currentBook.image)} />
 
             <div className="bookPageContentCategorieContainer">
                 {currentBook.categories.map((categorie) => {

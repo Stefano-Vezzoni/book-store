@@ -100,4 +100,6 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE.md) pa
 
 ➜ npm i react-hook-form zod @hookform/resolvers
 
+➜ npm install react-toastify
+
 ```
