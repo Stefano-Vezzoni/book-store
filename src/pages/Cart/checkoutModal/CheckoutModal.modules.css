@@ -27,6 +27,10 @@
     padding: 40px;
 }
 
+.checkoutModalContainer > form > h2 {
+    margin-bottom: 12px;
+}
+
 .checkoutModalCloseButton {
     position: absolute;
     top: 14px;
